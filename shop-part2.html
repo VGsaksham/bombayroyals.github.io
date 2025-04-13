@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page 2 | Bombay Royals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <h1>BOMBAY ROYALS</h1>
+            </div>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="shop-part1.html" class="nav-link active"><i class="fas fa-tshirt"></i> Collections</a></li>
+                <li><a href="index.html#bridal" class="nav-link"><i class="fas fa-female"></i> Bridal</a></li>
+                <li><a href="index.html#groom" class="nav-link"><i class="fas fa-male"></i> Groom</a></li>
+                <li><a href="index.html#accessories" class="nav-link"><i class="fas fa-gem"></i> Accessories</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo">
+                        <a href="index.html">BOMBAY ROYALS</a>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="shop-part1.html" class="active">Shop</a></li>
+                        <li><a href="product-details.html">Featured</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="header-icons">
+                        <a href="#" class="icon-link search-toggle"><i class="fas fa-search"></i></a>
+                        <a href="profile.html" class="icon-link"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="icon-link cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                </form>
+                <button class="close-search"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <div class="container">
+                <p>Free shipping on all orders over $150 | Use code: ROYALTY</p>
+            </div>
+        </div>
+
+        <!-- Shop Banner -->
+        <section class="shop-banner">
+            <div class="container">
+                <div class="shop-banner-content">
+                    <h1>More Collections</h1>
+                    <p>Explore our extended range of premium clothing and accessories</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Content -->
+        <section class="shop-content">
+            <div class="container">
+                <div class="shop-layout">
+                    <!-- Sidebar Filters -->
+                    <aside class="shop-sidebar">
+                        <div class="sidebar-header mobile-only">
+                            <h3>Filters</h3>
+                            <button class="close-filters">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Categories</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" checked data-category="all">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">All Collections</span>
+                                        <span class="filter-count">(24)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" data-category="Casual Wear">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">Casual Wear</span>
+                                        <span class="filter-count">(8)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" data-category="Formal Wear">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">Formal Wear</span>
+                                        <span class="filter-count">(6)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" data-category="Ethnic Wear">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">Ethnic Wear</span>
+                                        <span class="filter-count">(5)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" data-category="Bridal Collection">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">Bridal Collection</span>
+                                        <span class="filter-count">(3)</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="filter-checkbox">
+                                        <input type="checkbox" data-category="Groom Collection">
+                                        <span class="checkmark"></span>
+                                        <span class="filter-label">Groom Collection</span>
+                                        <span class="filter-count">(2)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="filter-section">
+                            <h3>Price Range</h3>
+                            <div class="price-slider">
+                                <div class="price-range">
+                                    <div class="range-slider">
+                                        <input type="range" min="0" max="1000" value="0" class="range-min">
+                                        <input type="range" min="0" max="1000" value="1000" class="range-max">
+                                    </div>
+                                    <div class="range-values">
+                                        <span class="range-value-min">$0</span>
+                                        <span class="range-value-max">$1000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter-buttons">
+                            <button class="btn btn-primary filter-apply-btn">Apply Filters</button>
+                            <button class="btn btn-outline filter-reset-btn">Reset</button>
+                        </div>
+                    </aside>
+
+                    <!-- Product Grid -->
+                    <div class="shop-products">
+                        <div class="shop-header">
+                            <div class="shop-results">
+                                <p>Showing <span>24</span> results</p>
+                            </div>
+                            <div class="shop-sorting">
+                                <label for="sort-by">Sort by:</label>
+                                <select id="sort-by" class="sort-select">
+                                    <option value="featured">Featured</option>
+                                    <option value="newest">Newest</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Customer Rating</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="product-grid">
+                            <!-- Product Cards -->
+                            <div class="product-card" data-category="Casual Wear" data-colors="White,Tea Green" data-sizes="XS,S,M" data-date="20230825" data-rating="4.3" data-featured="0" data-price="119">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/casual-wear.jpg" alt="Linen Summer Dress">
+                                    </a>
+                                    <div class="product-tags">
+                                        <span class="tag sale">Sale</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Linen Summer Dress</a></h3>
+                                    <div class="product-price">
+                                        <span class="original-price">$149.00</span>
+                                        <span class="sale-price">$119.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-category="Formal Wear" data-colors="Red,Raw Umber" data-sizes="S,M,L" data-date="20230815" data-rating="4.6" data-featured="0" data-price="249">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/formal-wear.jpg" alt="Classic Silk Saree">
+                                    </a>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Classic Silk Saree</a></h3>
+                                    <div class="product-price">$249.00</div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-category="Ethnic Wear" data-colors="Brunswick Green,Black" data-sizes="M,L,XL" data-date="20230810" data-rating="4.4" data-featured="0" data-price="189">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/ethnic-wear.jpg" alt="Embroidered Jacket">
+                                    </a>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Embroidered Jacket</a></h3>
+                                    <div class="product-price">$189.00</div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-category="Bridal Collection" data-colors="Red,Raw Umber" data-sizes="S,M,L" data-date="20230918" data-rating="4.9" data-featured="1" data-price="499">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/bridal-collection.jpg" alt="Handcrafted Lehenga">
+                                    </a>
+                                    <div class="product-tags">
+                                        <span class="tag new">New</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Handcrafted Lehenga</a></h3>
+                                    <div class="product-price">$499.00</div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-category="Casual Wear" data-colors="Tea Green,French Gray" data-sizes="S,M,L" data-date="20230915" data-rating="4.5" data-featured="1" data-price="129">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/casual-wear.jpg" alt="Summer Collection Dress">
+                                    </a>
+                                    <div class="product-tags">
+                                        <span class="tag new">New</span>
+                                    </div>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Summer Collection Dress</a></h3>
+                                    <div class="product-price">$129.00</div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-category="Groom Collection" data-colors="Black,Brunswick Green" data-sizes="M,L,XL" data-date="20230905" data-rating="4.7" data-featured="1" data-price="399">
+                                <div class="product-image">
+                                    <a href="product-details.html">
+                                        <img src="images/groom-collection.jpg" alt="Wedding Collection">
+                                    </a>
+                                    <div class="product-actions">
+                                        <button class="action-btn" data-action="wishlist"><i class="far fa-heart"></i></button>
+                                        <button class="action-btn" data-action="cart"><i class="fas fa-shopping-bag"></i></button>
+                                        <button class="action-btn" data-action="quickview"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title"><a href="product-details.html">Wedding Collection</a></h3>
+                                    <div class="product-price">$399.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <a href="shop-part1.html" class="page-link">1</a>
+                            <a href="shop-part2.html" class="page-link active">2</a>
+                            <a href="shop-part1.html" class="page-link prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-container">
+            <section class="newsletter-section">
+                <div class="newsletter-wrapper">
+                    <div class="newsletter-content">
+                        <div class="newsletter-text">
+                            <h2>Join Our Royal Family</h2>
+                            <p>Subscribe to receive exclusive offers, early access to new collections, and styling tips</p>
+                        </div>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email Address" required>
+                                <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                            <div class="form-consent">
+                                <small>By subscribing, you agree to our <a href="#">Privacy Policy</a>. You can unsubscribe at any time.</small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>BOMBAY ROYALS</h2>
+                        <p>Premium Clothing Brand</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="shop-part1.html">Women's Collection</a></li>
+                                <li><a href="shop-part2.html">Men's Collection</a></li>
+                                <li><a href="#">Bridal Collection</a></li>
+                                <li><a href="#">Groom Collection</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Help</h3>
+                            <ul>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">Size Guide</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Bombay Royals. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Quick View Modal Template -->
+    <div class="quick-view-modal" id="quickViewModal" style="display: none;">
+        <div class="quick-view-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="quick-view-image">
+                <img src="" alt="Product Image" id="quickViewImage">
+            </div>
+            <div class="quick-view-details">
+                <h2 id="quickViewTitle"></h2>
+                <p class="price" id="quickViewPrice"></p>
+                <div class="quick-view-options">
+                    <div class="option-group">
+                        <label>Size:</label>
+                        <div class="size-options">
+                            <button class="size-option" data-size="XS">XS</button>
+                            <button class="size-option" data-size="S">S</button>
+                            <button class="size-option" data-size="M">M</button>
+                            <button class="size-option" data-size="L">L</button>
+                            <button class="size-option" data-size="XL">XL</button>
+                        </div>
+                    </div>
+                    <div class="option-group">
+                        <label>Quantity:</label>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-view-actions">
+                    <button class="btn btn-primary" id="quickViewAddToCart">Add to Cart</button>
+                    <button class="btn btn-outline" id="quickViewDetails">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="cart-handler.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html> 

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Royals | Premium Clothing Brand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <h1>BOMBAY ROYALS</h1>
+            </div>
+            <button class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#collections" class="nav-link"><i class="fas fa-tshirt"></i> Collections</a></li>
+                <li><a href="#bridal" class="nav-link"><i class="fas fa-female"></i> Bridal</a></li>
+                <li><a href="#groom" class="nav-link"><i class="fas fa-male"></i> Groom</a></li>
+                <li><a href="#accessories" class="nav-link"><i class="fas fa-gem"></i> Accessories</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="logo">
+                        <a href="index.html">BOMBAY ROYALS</a>
+                    </div>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="product-details.html">Featured</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <div class="header-icons">
+                        <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                        <a href="profile.html" class="icon-link"><i class="fas fa-user"></i></a>
+                        <a href="cart.html" class="icon-link cart-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <div class="container">
+                <p>Free shipping on all orders over $150 | Use code: ROYALTY</p>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Elegance Redefined</h2>
+                <p>Discover our premium collection of handcrafted clothing that blends tradition with contemporary style</p>
+                <div class="hero-buttons">
+                    <a href="shop.html" class="btn btn-primary">Explore Collections</a>
+                    <a href="about.html" class="btn btn-outline">About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Shop by Category</h2>
+                    <p class="section-description">Explore our curated collections for every occasion</p>
+                </div>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/casual-wear.jpg" alt="Casual Wear">
+                        </div>
+                        <div class="category-details">
+                            <h3>Casual Wear</h3>
+                            <a href="shop.html" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/formal-wear.jpg" alt="Formal Wear">
+                        </div>
+                        <div class="category-details">
+                            <h3>Formal Wear</h3>
+                            <a href="shop.html" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image">
+                            <img src="images/ethnic-wear.jpg" alt="Ethnic Wear">
+                        </div>
+                        <div class="category-details">
+                            <h3>Ethnic Wear</h3>
+                            <a href="shop.html" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="collections">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Collections</h2>
+                    <p class="section-description">Discover our latest designs and seasonal favorites</p>
+                </div>
+                <div class="collection-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="new-arrivals">New Arrivals</button>
+                        <button class="tab-btn" data-tab="bestsellers">Bestsellers</button>
+                        <button class="tab-btn" data-tab="seasonal">Seasonal</button>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="new-arrivals">
+                            <div class="product-grid">
+                                <!-- Product Cards -->
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/casual-wear.jpg" alt="Product 1">
+                                        <div class="product-tags">
+                                            <span class="tag new">New</span>
+                                        </div>
+                                        <div class="product-actions">
+                                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                            <button class="action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="action-btn"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <h3 class="product-title">Silk Embroidered Blouse</h3>
+                                        <div class="product-price">$129.00</div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/formal-wear.jpg" alt="Product 2">
+                                        <div class="product-tags">
+                                            <span class="tag new">New</span>
+                                        </div>
+                                        <div class="product-actions">
+                                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                            <button class="action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="action-btn"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <h3 class="product-title">Tailored Wool Suit</h3>
+                                        <div class="product-price">$349.00</div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/ethnic-wear.jpg" alt="Product 3">
+                                        <div class="product-tags">
+                                            <span class="tag new">New</span>
+                                            <span class="tag sale">Sale</span>
+                                        </div>
+                                        <div class="product-actions">
+                                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                            <button class="action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="action-btn"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <h3 class="product-title">Embellished Kurta Set</h3>
+                                        <div class="product-price">
+                                            <span class="original-price">$199.00</span>
+                                            $159.00
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card">
+                                    <div class="product-image">
+                                        <img src="images/bridal-collection.jpg" alt="Product 4">
+                                        <div class="product-tags">
+                                            <span class="tag new">New</span>
+                                        </div>
+                                        <div class="product-actions">
+                                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                                            <button class="action-btn"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="action-btn"><i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="product-details">
+                                        <h3 class="product-title">Designer Evening Gown</h3>
+                                        <div class="product-price">$279.00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bridal Section -->
+        <section id="bridal" class="bridal-section">
+            <div class="container">
+                <div class="bridal-content">
+                    <div class="bridal-text">
+                        <h2 class="section-title">Bridal Collection</h2>
+                        <p>Exquisite bridal wear that combines traditional craftsmanship with contemporary designs. Our bridal collection features intricate embroidery, premium fabrics, and timeless silhouettes.</p>
+                        <a href="shop.html" class="btn btn-primary">View Collection</a>
+                    </div>
+                    <div class="bridal-image">
+                        <img src="images/bridal-collection.jpg" alt="Bridal Collection">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Groom Section -->
+        <section id="groom" class="groom-section">
+            <div class="container">
+                <div class="groom-content">
+                    <div class="groom-image">
+                        <img src="images/groom-collection.jpg" alt="Groom Collection">
+                    </div>
+                    <div class="groom-text">
+                        <h2 class="section-title">Groom Collection</h2>
+                        <p>Sophisticated attire for the modern groom. Our collection features impeccably tailored suits, traditional sherwanis, and contemporary fusion wear crafted from the finest materials.</p>
+                        <a href="shop.html" class="btn btn-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accessories Section -->
+        <section id="accessories" class="accessories">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Accessories</h2>
+                    <p class="section-description">Complete your look with our premium accessories</p>
+                </div>
+                <div class="accessories-grid">
+                    <div class="accessory-card">
+                        <div class="accessory-image">
+                            <img src="images/jewelry.jpg" alt="Jewelry">
+                        </div>
+                        <h3>Jewelry</h3>
+                    </div>
+                    <div class="accessory-card">
+                        <div class="accessory-image">
+                            <img src="images/footwear.jpg" alt="Footwear">
+                        </div>
+                        <h3>Footwear</h3>
+                    </div>
+                    <div class="accessory-card">
+                        <div class="accessory-image">
+                            <img src="images/bags.jpg" alt="Bags">
+                        </div>
+                        <h3>Bags</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">About Bombay Royals</h2>
+                    <p>Bombay Royals is a premium clothing brand that celebrates the rich heritage of Indian craftsmanship while embracing contemporary design sensibilities. Founded in 2010, we have established ourselves as a leading name in luxury fashion.</p>
+                    <p>Our collections are crafted with meticulous attention to detail, using the finest fabrics and traditional techniques passed down through generations. Each piece tells a story of artistry and elegance, designed for the modern individual who appreciates quality and timeless style.</p>
+                    <p>We are committed to ethical practices and supporting local artisans, ensuring that every Bombay Royals creation not only looks exceptional but also contributes positively to the communities we work with.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-description">We'd love to hear from you</p>
+                </div>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Visit Us</h3>
+                                <p>123 Fashion Street, Mumbai, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>info@bombayroyals.com</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <h2>BOMBAY ROYALS</h2>
+                        <p>Premium Clothing Brand</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#">Women's Collection</a></li>
+                                <li><a href="#">Men's Collection</a></li>
+                                <li><a href="#">Bridal Collection</a></li>
+                                <li><a href="#">Groom Collection</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Help</h3>
+                            <ul>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Shipping & Returns</a></li>
+                                <li><a href="#">Size Guide</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-column">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Bombay Royals. All Rights Reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="cart-handler.js"></script>
+</body>
+</html> 
